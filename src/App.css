@@ -1,0 +1,135 @@
+.application{
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 750px;
+  align-content: center;
+  flex-direction: row;
+}
+
+.Blue-Team{
+  padding: 0px;
+  height: 200px;
+  width: 350px;
+  background-color: lightblue;
+  position: left;
+}
+
+.Blue-Team-Name{
+  padding: 0px;
+  height: 100px;
+  width: 350px;
+  background-color: blue;
+  text-align: center;
+}
+
+.Blue-Team-Bans{
+  display: flex;
+}
+
+.Blue-Team-B{
+  padding: 0px;
+  height: 100px;
+  width: 70px;
+  text-align: center;
+  row-gap: 5px;
+}
+
+.Blue-Team-P{
+  height: 110px;
+  width: 350px;
+  background-color: blue;
+  text-align: right;
+}
+
+.Timer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 835px;
+  background-color: green;
+  text-align: center;
+}
+
+.Champion-Search {
+  height: 50px;
+  width: 200px;
+  background-color: purple;
+  position: absolute;
+}
+
+.Champion-Select {
+
+  padding: 0px;
+  height: 650px;
+  width:835px;
+  position:relative;
+  align-content: center;
+  text-align: center;
+  border-collapse: separate;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: min-content;
+  overflow-y: scroll;
+  border: none;
+
+}
+
+
+.Champion-Filter {
+  height: 50px;
+  width:200px;
+  background-color: white;
+  position: absolute;
+  top:0;
+}
+
+.Champion-Select-Button {
+  height: 50px;
+  width: 200px;
+  background-color: orange;
+  position: absolute;
+  left: 37%;
+  bottom: 0;
+
+}
+
+
+.Red-Team {
+  padding: 0px;
+  height: 200px;
+  width: 350px;
+  background-color: pink;
+  position: right;
+  text-align: center;
+}
+
+.Red-Team-Name{
+  padding: 0px;
+  height: 100px;
+  width: 350px;
+  background-color: red;
+  text-align: center;
+}
+
+.Red-Team-Bans {
+  display: flex;
+}
+
+.Red-Team-B{
+  padding: 0px;
+  height: 100px;
+  width: 80px;
+  text-align: center;
+}
+
+.Red-Team-Picks {
+  position: left;
+}
+
+.Red-Team-P {
+  padding: 0px;
+  height: 110px;
+  width: 350px;
+  background-color: Red;
+  text-align: left;  
+}

@@ -1,7 +1,8 @@
 import './App.css';
 import {championList} from './Data.js'
 import SearchBar from './components/searchbar.js';
-import { useState } from 'react';
+
+//'Baby Come Back'//
 
 function App() {
 
@@ -68,6 +69,12 @@ function App() {
     <div className="Champion-Search">
         <SearchBar />
     </div>
+    
+    {championList.map((item) => (
+
+      <button>{item.portrait}</button>
+
+    ))}
 
       <button className="Champion-Select-Button">
         Select

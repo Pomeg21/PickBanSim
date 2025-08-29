@@ -1,4 +1,19 @@
 .input-wrapper {
+
     background-color: purple;
+    width: 835px;
+    height: 50px;
+    align-items: right;
+}
+
+.input-result {
+    
+    height: 635px;
+    width:835px;
+    display: flex;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: min-content;
+    overflow-y: scroll;
+    align-items: center;
 
 }

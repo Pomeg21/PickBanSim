@@ -50,29 +50,6 @@
   text-align: center;
 }
 
-.Champion-Search {
-  height: 50px;
-  width: 200px;
-  background-color: purple;
-  position: absolute;
-}
-
-.Champion-Select {
-
-  padding: 0px;
-  height: 650px;
-  width:835px;
-  position:relative;
-  align-content: center;
-  text-align: center;
-  border-collapse: separate;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: min-content;
-  overflow-y: scroll;
-  border: none;
-
-}
 
 
 .Champion-Filter {

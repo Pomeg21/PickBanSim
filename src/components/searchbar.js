@@ -3,38 +3,20 @@ import './searchbar.css';
 import { championList } from '../Data';
 import { useState } from 'react';
 
-const SearchBar = () => {
-  const [input, setInput] = useState("")
-  
-  const fetchData = (value) => {
-    fetch("/Data.js").then((response) => response.json()).then(json =>{
-      console.log(json);
-    });
-  }
+function SearchBar(props) {
+    return (
+    <div>
+        <div className='champion-grid'>
+            {championList.map((championList) => (
+                <button key={championList.name}>{championList.portrait}</button>
+            ))}
+        </div>
 
-  const handleChange = (value)=> {
-    setInput(value)
-    fetchData(value)
-  }
-
-  return (
-<div>
-
-    <div className = 'input-wrapper'>
-        <input placeholder='Search...' value={input} onChange={(e) => handleChange(e.target.value)} /> 
+        <div className='select-button'>
+            <button style={{border: 0, borderRadius:10, fontSize:25, marginLeft:345, paddingTop:11, paddingBottom:11, paddingLeft:30, paddingRight:30, backgroundColor:'purple'}}>Select</button>
+        </div>
     </div>
-
-    <div classname = 'input-result'>
-
-      {championList.map((item) => (
-
-      <button>{item.portrait}</button>
-
-    ))}
-    </div>
-
-</div>
-  )
+    )
 }
 
 export default SearchBar
